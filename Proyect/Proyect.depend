@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1637161351 source:/home/pi/Proyect/main.cpp
+	<iostream>
+	<string.h>
+	<wiringPi.h>
+	<math.h>
+	<chrono>
+	<thread>
+	"lcd.h"
+	"libproyect1.h"
+
+1637159737 /home/pi/Proyect/libproyect1.h
+	<stdint.h>
+

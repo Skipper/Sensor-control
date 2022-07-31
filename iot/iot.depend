@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1637098493 source:/home/pi/iot/am2320.cpp
+	<unistd.h>
+	<iostream>
+	"i2c.h"
+
+1637098493 /home/pi/iot/i2c.h
+
+1637098493 source:/home/pi/iot/i2c.cpp
+	<stdio.h>
+	<stdlib.h>
+	<fcntl.h>
+	<linux/i2c-dev.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	"i2c.h"
+
+1637099087 source:/home/pi/iot/iot.cpp
+	<wiringPi.h>
+	<softPwm.h>
+	"iot.h"
+	"si7021.h"
+	"am2320.h"
+	"TCS3472.h"
+	"lcd.h"
+
+1637098493 /home/pi/iot/iot.h
+	<stdint.h>
+
+1637098493 /home/pi/iot/si7021.h
+
+1637098493 /home/pi/iot/am2320.h
+
+1637098493 /home/pi/iot/TCS3472.h
+
+1637098493 /home/pi/iot/lcd.h
+	<cstddef>
+	<stdint.h>
+
+1637099110 source:/home/pi/iot/lcd.cpp
+	"lcd.h"
+	<stdio.h>
+	<unistd.h>
+	<string.h>
+	"i2c.h"
+	<ctime>
+
+1637099061 source:/home/pi/iot/main.cpp
+	<iostream>
+	<string.h>
+	<wiringPi.h>
+	<math.h>
+	<chrono>
+	<thread>
+	"lcd.h"
+	"iot.h"
+
+1637098493 source:/home/pi/iot/si7021.cpp
+	<stdio.h>
+	<math.h>
+	"i2c.h"
+	"si7021.h"
+
+1637123548 source:/home/pi/iot/TCS3472.cpp
+	<stdio.h>
+	<unistd.h>
+	<wiringPi.h>
+	"i2c.h"
+	"TCS3472.h"
+
+1637158683 source:/home/pi/iot/libproyect1.cpp
+	<wiringPi.h>
+	<softPwm.h>
+	"libproyect1.h"
+	"si7021.h"
+	"am2320.h"
+	"TCS3472.h"
+	"lcd.h"
+
+1637098493 /home/pi/iot/libproyect1.h
+	<stdint.h>
+
