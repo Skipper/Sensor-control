@@ -1,6 +1,6 @@
 ## Description
 
-Project developed with Raspberry Pi in programming language C, C++ with I2C communication protocol for sensor control and data collection projected on LCD screen.
+Project developed with **Raspberry Pi 3** in programming language **C, C++** with **I2C** communication protocol for sensor control and data collection projected on LCD screen.
 
 Devices used:
 
