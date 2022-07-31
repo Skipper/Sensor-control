@@ -12,7 +12,7 @@ Devices used:
 **To display information:**
 
 * 16x2 RGB backlit LCD display (JHD1313/PCA9633)
-*RGB Leds
+* RGB Leds
 
 For more details, go to the specific project folder: images/readme.md
 
