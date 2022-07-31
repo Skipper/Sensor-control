@@ -1,18 +1,18 @@
-## Programa Principal
+## Main Program
 
-El programa principal se vale de la librería dinámica libproyect1.so, que recopila las funcionalidades de todos los módulos implementados para los diferentes dispositivos antes mencionados, para tomar mediciones de temperatura, humedad y color, y en base a los resultados imprimir ciertos valores o hacer que la pantalla y/o el led rgb actúen de una determinada manera. El funcionamiento básico del mismo será el siguiente:
+The main program uses the libproyect1.so dynamic library, which compiles the functionalities of all the modules implemented for the different devices mentioned above, to take measurements of temperature, humidity and color, and based on the results print certain values ​​or do that the screen and/or the rgb led act in a certain way. Its basic operation will be as follows:
 
-* Se tomarán 2 mediciones de Temperatura, Humedad y Color cada 1 segundo.
-* Los resultados de las mediciones se mostrarán en la pantalla LCD y por consola (mostrandose en esta ultima, ademas, la Fecha y la hora y el color dominante)
-* Cada 1 minuto se mostrarán por pantalla estadísticas (Max, Min, Mean, Std) vinculadas a la Temperatura y la Humedad, así como el color más dominante durante el último minuto.
-* El color Normal de la luz de fondo del LCD es blanco.
-* El brillo de la luz de fondo del LCD y del RGB está controlado por el valor del -clear proveniente del sensor de color (a mayor luminosidad, menor brillo)
-* Si la temperatura está sobre 30°, la luz de fondo del LCD pasará a rojo.
-* Si la humedad está por encima de 60 %, la luz de fondo del LCD pasará a azul.
-* Si los dos valores se encuentran por encima de esos parámetros, a la vez, la luz de fondo del LCD pasará a verde.
-* Si cualquiera de las anteriores condiciones se mantiene por 5 o más segundos, la luz de fondo del LCD parpadea.
-* La luz de fondo del LCD parpadea con una frecuencia de 2 Hz. (2 en 1 segundo)
-* El RGB representa el color mas dominante de acuerdo al sensor de color.
+* 2 measurements of Temperature, Humidity and Color will be taken every 1 second.
+* The results of the measurements will be shown on the LCD screen and by console (showing in the latter, in addition, the Date and time and the dominant color)
+* Every 1 minute, statistics (Max, Min, Mean, Std) linked to Temperature and Humidity will be displayed on the screen, as well as the most dominant color during the last minute.
+* Normal LCD backlight color is white.
+* LCD and RGB backlight brightness is controlled by the -clear value coming from the color sensor (the higher the brightness, the lower the brightness)
+* If the temperature is over 30°, the LCD backlight will turn red.
+* If the humidity is above 60%, the LCD backlight will turn blue.
+* If both values ​​are above these parameters at the same time, the LCD backlight will turn green.
+* If any of the above conditions continue for 5 seconds or more, the LCD backlight flashes.
+* LCD backlight flashes at a frequency of 2 Hz. (2 in 1 second)
+* RGB represents the most dominant color according to the color sensor.
 
-Tiene, a su vez, definidas algunas funciones propias del mismo para calcular estadísticas o realizar alguna funcionalidad adicional. Y, por otro lado, permite ciertas parametrizaciones para que el usuario elija, por ejemplo, por cuánto tiempo se ejecutará, qué sensor de temperatura y humedad emplea o qué ciclo/período le dará al parpadeo de pantalla.
-Al terminar el ciclo de toma de datos (parametrizable), se muestra en la pantalla LCD un mensaje informativo de que el proyecto ha terminado, el tiempo transcurrido durante la ejecución en horas, minutos y segundos y se realiza el apagado del bombillo RGB, color de fondo de pantalla y el texto que mostraba en las dos líneas, con el fin de prolongar la vida útil de los dispositivos al evitar que quede algún valor al momento de desconectarlo.
+It has, in turn, defined some of its own functions to calculate statistics or perform some additional functionality. And, on the other hand, it allows certain parameters for the user to choose, for example, how long it will run for, what temperature and humidity sensor it uses or what cycle/period it will flash on the screen.
+At the end of the data collection cycle (parameterizable), an informative message is displayed on the LCD screen stating that the project has finished, the time elapsed during execution in hours, minutes and seconds, and the RGB bulb turns off, color of screen background and the text that it showed in the two lines, in order to prolong the useful life of the devices by avoiding that any value remains when it is disconnected.
